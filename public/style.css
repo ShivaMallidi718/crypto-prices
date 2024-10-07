@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+.exchange{
+    margin: 20px 10px;
+}
+.crypto-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    gap: 3%;
+    overflow-x: auto;
+}
+.crypto-container::-webkit-scrollbar{
+    display: none;
+}
+hr{
+    visibility: hidden;
+}
+.githubid{
+    color: white;
+}
+.crypto {
+    box-sizing: border-box;
+    display: flex;
+    gap: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.crypto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.crypto h3 {
+    white-space: nowrap;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+.coingecko{
+    color: #4BCC00;
+    font-size: 1.1em;
+}
+.time{
+    margin: 20px 10px;
+    margin-bottom: 30px;
+}

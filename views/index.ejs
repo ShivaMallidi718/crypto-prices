@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <%priceList.forEach(element => {%>
+        <div class="exchange" id="binance">
+            <h1><%=element.name%></h1>
+            <div class="crypto-container">
+    
+                <div class="crypto">
+                    <img src="images/bitcoin-btc-logo.png" alt="">
+                    <div>
+                        <h3>Bitcoin</h3>
+                        <h4><%=element.BTC || "NA"%></h4>
+                    </div>
+                </div>
+                <div class="crypto">
+                    <img src="images/ethereum-eth-logo.png" alt="">
+                    <div>
+                        <h3>Ethereum</h3>
+                        <h4><%=element.ETH || "NA"%></h4>
+                    </div>
+                </div>
+                <div class="crypto">
+                    <img src="images/solana-sol-logo.png" alt="">
+                    <div>
+                        <h3>Solana</h3>
+                        <h4><%=element.SOL || "NA"%></h4>
+                    </div>
+                </div>
+                <div class="crypto">
+                    <img src="images/shiba-inu-shib-logo.png" alt="">
+                    <div>
+                        <h3>Shiba Inu</h3>
+                        <h4><%=element.SHIB || "NA"%></h4>
+                    </div>
+                </div>
+                <div class="crypto">
+                    <img src="images/dogecoin-doge-logo.png" alt="">
+                    <div>
+                        <h3>Doge Coin</h3>
+                        <h4><%=element.DOGE || "NA"%></h4>
+                    </div>
+                </div>
+
+		<div class="crypto">
+                    <img src="images/bonk-bonk-logo.png" alt="">
+                    <div>
+                        <h3>BONK</h3>
+                        <h4><%=element.BONK || "NotAvailable"%></h4>
+                    </div>
+                </div>
+
+
+                <div class="crypto">
+                    <img src="images/pepe-pepe-logo.png" alt="">
+                    <div>
+                        <h3>PEPE</h3>
+                        <h4><%=element.PEPE || "NotAvailable"%></h4>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <hr>
+    <%});%>
+    <p class="time">Price updated at:<%=lastUpdatedTime%></p>
+    <footer>
+        <p>Data provided by <span class="coingecko">CoinGecko</span> API</p>
+        <p class="githubid">Github:shivamallidi718</p>
+    </footer>
+
+</body>
+</html>
